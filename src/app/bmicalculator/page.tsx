@@ -4,8 +4,8 @@ import './bmiCalculator.css'
 
 const page = () => {
 
-  const [height, setHeight] = React.useState<number>(null);
-  const [weight, setWeight] = React.useState<number>(null);
+  const [height, setHeight] = React.useState<number>(null||0);
+  const [weight, setWeight] = React.useState<number>(null||0);
   const [bmi, setBmi] = React.useState<number | null>(null);
   const [message, setMessage] = React.useState<string>('');
 
