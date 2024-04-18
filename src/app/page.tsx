@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import HomeBanner1 from "./components/HomeBanner1/HomeBanner1";
 import HomeBanner2 from "./components/HomeBanner2/HomeBanner2";
 import HomePage from "./components/Home/Home";
+import Footer from './components/Footer/Footer'
 
 export default function Home() {
   const [isloggedin, setIsloggedin] = useState<boolean>(false);
@@ -47,6 +48,8 @@ export default function Home() {
       {!isloggedin && !isAdmin && <HomePage />}
       <HomeBanner1 />
       {(isloggedin || isAdmin) && <HomeBanner2 />}
+      <Footer/>
+
     </main>
   );
 }
